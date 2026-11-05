@@ -34,7 +34,7 @@ path = [
     "dev/test_data/idta_submodel_templates_enriched_with_qualifiers/originals_with_duplicated_definitions/**",
 ]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "Industrial Digital Twin Association e.V."
+SPDX-FileCopyrightText = "Industrial Digital Twin Association e. V."
 SPDX-License-Identifier = "CC-BY-4.0"
 
 # These files are derived from the IDTA submodel templates: the templates with
@@ -54,7 +54,7 @@ path = [
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = [
-    "Industrial Digital Twin Association e.V.",
+    "Industrial Digital Twin Association e. V.",
     "2023 aas-smt-codegen AUTHORS",
 ]
 SPDX-License-Identifier = "CC-BY-4.0"
