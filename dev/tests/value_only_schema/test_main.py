@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-smt-codegen AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 # pylint: disable=missing-docstring
 # pylint: disable=protected-access
 
