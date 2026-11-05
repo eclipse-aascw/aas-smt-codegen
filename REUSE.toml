@@ -1,0 +1,69 @@
+# SPDX-FileCopyrightText: 2023 aas-smt-codegen AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# NOTE:
+# If several annotations match a file, the last one takes precedence. Hence,
+# we go from the general to the specific annotations.
+
+# Prose and metadata where a header would end up in the rendered output
+# (e.g., README shown on GitHub and PyPI).
+[[annotations]]
+path = ["AUTHORS", "README.rst", "CONTRIBUTING.rst"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-smt-codegen AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# Test data and the recorded test outputs are compared byte-by-byte, and
+# JSON can not carry a comment. This covers our own snippets and our own
+# test submodel template "Our AddressInformation".
+[[annotations]]
+path = ["dev/test_data/**", "archived/2025-10-21/test_data/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-smt-codegen AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The IDTA submodel templates are copied verbatim from
+# https://github.com/admin-shell-io/submodel-templates, which is licensed
+# under CC-BY-4.0. We keep their original license.
+[[annotations]]
+path = [
+    "archived/2025-10-21/test_data/submodel_templates/**",
+    "dev/test_data/idta_submodel_templates_enriched_with_qualifiers/originals_with_duplicated_definitions/**",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Industrial Digital Twin Association e.V."
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# These files are derived from the IDTA submodel templates: the templates with
+# the re-definitions replaced by references, and the recorded outputs of
+# the generator, which contain the texts of the templates (e.g., descriptions).
+# Hence, they keep the license of the templates.
+[[annotations]]
+path = [
+    "dev/test_data/idta_submodel_templates_enriched_with_qualifiers/deduplicated_with_structure_references/**",
+    "dev/test_data/aas_visualization/**",
+    "dev/test_data/frontend/**",
+    "dev/test_data/value_only_schema/*/expected_output/**",
+    "archived/2025-10-21/test_data/aas_visualization/**",
+    "archived/2025-10-21/test_data/frontend/**",
+    "archived/2025-10-21/test_data/opcua/expected/*/expected_output/**",
+    "archived/2025-10-21/test_data/opcua/expected/*/snippets/external_models/**",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = [
+    "Industrial Digital Twin Association e.V.",
+    "2023 aas-smt-codegen AUTHORS",
+]
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# "Our AddressInformation" is not an IDTA submodel template. We created it
+# ourselves with dev/dev_scripts/create_address_information_submodel_template.py,
+# so it and its recorded outputs are ours.
+[[annotations]]
+path = "archived/2025-10-21/test_data/**/Our AddressInformation/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-smt-codegen AUTHORS"
+SPDX-License-Identifier = "MIT"
