@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-smt-codegen AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Download all the IDTA submodel templates from GitHub which were previously listed."""
 
 import os.path

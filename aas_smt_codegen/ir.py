@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-smt-codegen AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Provide the intermediate representation for AAS Submodel Templates."""
 
 import collections.abc

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-smt-codegen AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """
 Embed (or overwrite) the referenced submodel templates into the submodel templates.
 

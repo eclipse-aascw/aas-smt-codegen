@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-smt-codegen AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Check that metadata in ``pyproject.toml`` and ``__init__.py`` are consistent."""
 
 import importlib.metadata
